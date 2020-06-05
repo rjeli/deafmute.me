@@ -1,0 +1,16 @@
+{
+  "name": "blurcam",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "browserslist": [
+    "> 5% in US"
+  ],
+  "dependencies": {
+    "@tensorflow-models/body-pix": "^2.0.5",
+    "@tensorflow/tfjs": "^2.0.0"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}

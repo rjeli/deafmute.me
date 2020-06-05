@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>deafmute.me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="manifest" href="./manifest.webmanifest">
+        <style>
+            html, body {
+                margin: 0px;
+                padding: 0px;
+                height: 100%;
+            }
+            .fullscreen {
+                width: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+            .flex {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="display" class="fullscreen"></canvas>
+        <div id="prompt" class="fullscreen flex" style="height: 100%;">
+            <p>use screen recording to record video</p>
+            <p>share button ⇨ "add to home screen" for easy access</p>
+            <p>tap anywhere to start</p>
+        </div>
+        <span id="fps" style="position: absolute; top: 0px; right: 50px; color: yellow"></span>
+        <video playsinline="true" style="display: none;"></video>
+        <canvas id="render" style="display: none;"></canvas>
+        <script src="./app.js"></script>
+    </body>
+</html>

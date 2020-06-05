@@ -1,0 +1,4 @@
+yarn install
+parcel --https index.html
+copy laughing to dist
+click thru https warnings (needed for cam)
